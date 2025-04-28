@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <title>Charities List</title>
+    <link rel="stylesheet" href="styles.css">
+</head> 
+<body>
+    <header>
+        <nav>
+            <img src="homelogo.JPG" alt="Home Logo" class="logo">
+            <ul class="nav-links">
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="charities.html">Charities</a></li>
+                <li><a href="charity_profile.html">Charity Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="charities-list-container">
+        <h1 class="charities-heading">Charities List</h1>
+        <p class="prompt">Search for charities in your area!</p>
+
+        <div class="search-form">
+            <input type="text" placeholder="Enter your city" class="input-field" id="cityInput" required>
+            <input type="text" placeholder="Enter your state" class="input-field" id="stateInput" required>
+            <button class="search-button" id="searchButton">Search</button>
+        </div>
+
+        <button class="weather-button" id="weatherButton">See Weather in Your Area</button>
+
+        <div id="weatherContainer"></div>
+    </section>
+
+    <script src="charities.js"></script>
+    <script src="weather.js"></script>
+</body>
+</html>
